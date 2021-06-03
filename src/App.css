@@ -1,3 +1,63 @@
+:root {
+    --primary-yellow: #ffff00;
+    --primary-green: #ffff00;
+    --primary-red: #ef4035;
+    --primary-hover-red: #f33501;
+}
+
+/**NAVBAR**/
+.navbar-nav > li > a {
+    border-top: 3px solid #212529
+}
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
-        border-top: 3px solid #9dabff !important;
-    };
+    border-top: 3px solid var(--primary-yellow) !important;
+    color: white !important;
+    transition: .5s ease-out ;
+}
+
+/**HEADER**/
+.header-wrapper{
+    position: relative;
+    background: url("./assets/computer-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.main-info{
+    display: flex;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-info h1{
+    color: var(--primary-yellow);
+    text-transform: uppercase
+}
+/**TYPED TEXT**/
+.typed-text{
+    color: white;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.btn-main-offer {
+    border: 3px solid var(--primary-red);
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 12px 12px 12px;
+    color: white;
+    margin: 2rem;
+}
+.btn-main-offer:hover {
+    color: white;
+    background-color: var(--primary-hover-red);
+    transition: .4s ease-out;
+}
